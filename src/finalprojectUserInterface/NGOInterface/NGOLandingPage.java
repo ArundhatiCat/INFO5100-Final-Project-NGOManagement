@@ -19,7 +19,7 @@ import finalprojectUserInterface.MainJFrameForm;
 
 /**
  *
- * @author girish
+ * @author sneha
  */
 public class NGOLandingPage extends javax.swing.JPanel {
 
