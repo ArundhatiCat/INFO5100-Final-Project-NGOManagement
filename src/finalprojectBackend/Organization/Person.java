@@ -11,6 +11,9 @@ import java.util.Date;
  * @author sneha
  */
 public class Person {
+    
+    
+    
 
 private String pName;
 private String pwd;
@@ -95,4 +98,6 @@ private Date dob;
     public void setIdUser(String idUser) {
         this.idUser = idUser;
     }
+    
+    
 }
