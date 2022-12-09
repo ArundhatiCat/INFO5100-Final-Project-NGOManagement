@@ -64,11 +64,11 @@ public class LogisticsFrontPage extends javax.swing.JPanel {
 
         logistics_lbl.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         logistics_lbl.setText("Logistics");
-        jPanel1.add(logistics_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, -1, -1));
+        jPanel1.add(logistics_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 30, -1, -1));
 
         role_lbl.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         role_lbl.setText("Role:");
-        jPanel1.add(role_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
+        jPanel1.add(role_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, -1, -1));
 
         role_cmb.setEditable(true);
         role_cmb.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -78,21 +78,21 @@ public class LogisticsFrontPage extends javax.swing.JPanel {
                 role_cmbActionPerformed(evt);
             }
         });
-        jPanel1.add(role_cmb, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 197, -1));
+        jPanel1.add(role_cmb, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, 197, -1));
 
         unmae_lbl.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         unmae_lbl.setText("Username:");
-        jPanel1.add(unmae_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, -1, -1));
+        jPanel1.add(unmae_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, -1, -1));
 
         uname_txt.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        jPanel1.add(uname_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 197, -1));
+        jPanel1.add(uname_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, 197, -1));
 
         pwd_lbl.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         pwd_lbl.setText("Password:");
-        jPanel1.add(pwd_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, -1, -1));
+        jPanel1.add(pwd_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, -1, -1));
 
         pwd_txt.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        jPanel1.add(pwd_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 260, 197, -1));
+        jPanel1.add(pwd_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, 197, -1));
 
         login_btn.setBackground(new java.awt.Color(255, 204, 51));
         login_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -102,7 +102,7 @@ public class LogisticsFrontPage extends javax.swing.JPanel {
                 login_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(login_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, 86, 40));
+        jPanel1.add(login_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, 86, 40));
 
         sigin_btn.setBackground(new java.awt.Color(255, 204, 51));
         sigin_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -112,7 +112,7 @@ public class LogisticsFrontPage extends javax.swing.JPanel {
                 sigin_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(sigin_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, -1, 40));
+        jPanel1.add(sigin_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, -1, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Backgrounds/delivery-bgbg.jpeg"))); // NOI18N
         jLabel2.setMaximumSize(new java.awt.Dimension(2999, 1999));
