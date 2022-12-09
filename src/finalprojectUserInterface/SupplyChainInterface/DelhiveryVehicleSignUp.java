@@ -50,13 +50,13 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         dv_profile = new javax.swing.JLabel();
         delvehicle_lbl = new javax.swing.JLabel();
-        veh_txt = new javax.swing.JTextField();
+        vehicle_txt = new javax.swing.JTextField();
         veh_num_lbl = new javax.swing.JLabel();
-        num_txt = new javax.swing.JTextField();
+        vehnum_txt = new javax.swing.JTextField();
         veh_lbl = new javax.swing.JLabel();
         vehtype_txt = new javax.swing.JTextField();
         desc_lbl = new javax.swing.JLabel();
-        desc_txt = new javax.swing.JTextField();
+        vehdes_txt = new javax.swing.JTextField();
         back_btn = new javax.swing.JButton();
         sign_btn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -71,12 +71,12 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
         delvehicle_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         delvehicle_lbl.setText("Vehicle Name:");
         jPanel1.add(delvehicle_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
-        jPanel1.add(veh_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 177, -1));
+        jPanel1.add(vehicle_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 177, -1));
 
         veh_num_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         veh_num_lbl.setText("Vehicle Number:");
         jPanel1.add(veh_num_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, -1, -1));
-        jPanel1.add(num_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 177, -1));
+        jPanel1.add(vehnum_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 177, -1));
 
         veh_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         veh_lbl.setText("Vehicle Type:");
@@ -86,7 +86,7 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
         desc_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         desc_lbl.setText("Description:");
         jPanel1.add(desc_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 190, -1, -1));
-        jPanel1.add(desc_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 177, -1));
+        jPanel1.add(vehdes_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 177, -1));
 
         back_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         back_btn.setText("Back");
@@ -135,7 +135,7 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
         try {
             if(EmpytyFieldValidation())
             {
-                DeliveryVehicle vehicle = new DeliveryVehicle(veh_txt.getText(),num_txt.getText(),vehtype_txt.getText(),desc_txt.getText());
+                DeliveryVehicle vehicle = new DeliveryVehicle(vehicle_txt.getText(),vehnum_txt.getText(),vehtype_txt.getText(),vehdes_txt.getText());
 
                 operatingSystem.addDeliveryVehicle(vehicle);
                 dB4OUtility.storeSystem(operatingSystem);
@@ -145,11 +145,11 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
                 suc.setVisible(true);
             }
             else{
-                JOptionPane.showMessageDialog(this,"Data Cant be empty. Please check over the red fields to know more.");
+                JOptionPane.showMessageDialog(this,"Empty Field not allowed ! Please check the red fields");
                 ValidationStatus=true;
             }
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(this,"Vehicle not registered, Try again");
+            JOptionPane.showMessageDialog(this,"Vehicle is not registered ! Please check");
             ValidationStatus=true;
         }
       
@@ -160,26 +160,26 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
     }//GEN-LAST:event_sign_btnActionPerformed
 
     private boolean EmpytyFieldValidation() {
-    if(veh_txt.getText().equals(null) || veh_txt.getText().trim().isEmpty() )
+    if(vehicle_txt.getText().equals(null) || vehicle_txt.getText().trim().isEmpty() )
     {
-        veh_txt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
-        veh_txt.setToolTipText("This Field Cannot be empty");
+        vehicle_txt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+        vehicle_txt.setToolTipText("This Field Cannot be empty");
         ValidationStatus= false;
     }
-    if(!veh_txt.getText().equals(null) && !veh_txt.getText().trim().isEmpty() )
+    if(!vehicle_txt.getText().equals(null) && !vehicle_txt.getText().trim().isEmpty() )
     {
-        veh_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
+        vehicle_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
     }
 
-    if(num_txt.getText().equals(null) || num_txt.getText().trim().isEmpty() )
+    if(vehnum_txt.getText().equals(null) || vehnum_txt.getText().trim().isEmpty() )
     {
-        num_txt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
-        num_txt.setToolTipText("This Field Cannot be empty");
+        vehnum_txt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+        vehnum_txt.setToolTipText("This Field Cannot be empty");
         ValidationStatus= false;
     }
-    if(!num_txt.getText().equals(null) && !num_txt.getText().trim().isEmpty() )
+    if(!vehnum_txt.getText().equals(null) && !vehnum_txt.getText().trim().isEmpty() )
     {
-        num_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
+        vehnum_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
     }
 
     if(vehtype_txt.getText().equals(null) || vehtype_txt.getText().trim().isEmpty() )
@@ -195,15 +195,15 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
     
 
 
-    if(desc_txt.getText().equals(null) || desc_txt.getText().trim().isEmpty() )
+    if(vehdes_txt.getText().equals(null) || vehdes_txt.getText().trim().isEmpty() )
     {
-        desc_txt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
-        desc_txt.setToolTipText("This Field Cannot be empty");
+        vehdes_txt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+        vehdes_txt.setToolTipText("This Field Cannot be empty");
         ValidationStatus= false;
     }
-    if(!desc_txt.getText().equals(null) && !desc_txt.getText().trim().isEmpty() )
+    if(!vehdes_txt.getText().equals(null) && !vehdes_txt.getText().trim().isEmpty() )
     {
-        desc_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
+        vehdes_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
     }
     return ValidationStatus;
     }
@@ -212,15 +212,15 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
     private javax.swing.JButton back_btn;
     private javax.swing.JLabel delvehicle_lbl;
     private javax.swing.JLabel desc_lbl;
-    private javax.swing.JTextField desc_txt;
     private javax.swing.JLabel dv_profile;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField num_txt;
     private javax.swing.JButton sign_btn;
     private javax.swing.JLabel veh_lbl;
     private javax.swing.JLabel veh_num_lbl;
-    private javax.swing.JTextField veh_txt;
+    private javax.swing.JTextField vehdes_txt;
+    private javax.swing.JTextField vehicle_txt;
+    private javax.swing.JTextField vehnum_txt;
     private javax.swing.JTextField vehtype_txt;
     // End of variables declaration//GEN-END:variables
 }
