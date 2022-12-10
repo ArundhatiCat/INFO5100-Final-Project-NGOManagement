@@ -66,27 +66,27 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
 
         dv_profile.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         dv_profile.setText("Create Delivery Vehicle Profile");
-        jPanel1.add(dv_profile, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, -1, -1));
+        jPanel1.add(dv_profile, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, -1, -1));
 
         delvehicle_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         delvehicle_lbl.setText("Vehicle Name:");
-        jPanel1.add(delvehicle_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
-        jPanel1.add(vehicle_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 177, -1));
+        jPanel1.add(delvehicle_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, -1));
+        jPanel1.add(vehicle_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, 177, -1));
 
         veh_num_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         veh_num_lbl.setText("Vehicle Number:");
-        jPanel1.add(veh_num_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, -1, -1));
-        jPanel1.add(vehnum_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 177, -1));
+        jPanel1.add(veh_num_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, -1, -1));
+        jPanel1.add(vehnum_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 190, 177, -1));
 
         veh_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         veh_lbl.setText("Vehicle Type:");
         jPanel1.add(veh_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 140, -1, -1));
-        jPanel1.add(vehtype_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 177, -1));
+        jPanel1.add(vehtype_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 140, 177, -1));
 
         desc_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         desc_lbl.setText("Description:");
         jPanel1.add(desc_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 190, -1, -1));
-        jPanel1.add(vehdes_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 177, -1));
+        jPanel1.add(vehdes_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 190, 177, -1));
 
         back_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         back_btn.setText("Back");
@@ -95,7 +95,7 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
                 back_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 87, 40));
+        jPanel1.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, 87, 40));
 
         sign_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         sign_btn.setText("Sign Up");
@@ -104,7 +104,7 @@ public class DelhiveryVehicleSignUp extends javax.swing.JPanel {
                 sign_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(sign_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, 87, 40));
+        jPanel1.add(sign_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 270, 87, 40));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 990, 590));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
