@@ -375,16 +375,7 @@ public class DeliveryAgentSignUp extends javax.swing.JPanel {
             num_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
         }
 
-        // if(telenum_txt.getText().equals(null) || telenum_txt.getText().trim().isEmpty() )
-        //     {
-        //         telenum_txt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
-        //         telenum_txt.setToolTipText("This Field Cannot be empty");
-        //         ValidationStatus= false;
-        //     }
-        // if(!telenum_txt.getText().equals(null) && !telenum_txt.getText().trim().isEmpty() )
-        // {
-        //     telenum_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
-        // }
+
 
         if(txt_dob.getText().equals(null) || txt_dob.getText().trim().isEmpty() )
             {
