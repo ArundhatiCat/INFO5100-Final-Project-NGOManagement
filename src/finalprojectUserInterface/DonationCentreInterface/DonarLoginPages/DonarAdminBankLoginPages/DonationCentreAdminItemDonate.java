@@ -55,10 +55,10 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
         title_lbl = new javax.swing.JLabel();
         donar_lbl = new javax.swing.JLabel();
         item_lbl = new javax.swing.JLabel();
-        itemname_txt = new javax.swing.JTextField();
-        itemname_lbl = new javax.swing.JLabel();
         cat_lbl = new javax.swing.JLabel();
         cat_txt = new javax.swing.JTextField();
+        itemname_txt = new javax.swing.JTextField();
+        itemname_lbl = new javax.swing.JLabel();
         status_lbl = new javax.swing.JLabel();
         status_cmb = new javax.swing.JComboBox<>();
         btn_save = new javax.swing.JButton();
@@ -76,11 +76,11 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
         item_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         item_lbl.setText("Item Type:");
 
-        itemname_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        itemname_lbl.setText("Item Name:");
-
         cat_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         cat_lbl.setText("Category:");
+
+        itemname_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        itemname_lbl.setText("Item Name:");
 
         status_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         status_lbl.setText("Status:");
@@ -108,37 +108,51 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(315, 315, 315)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(title_lbl)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(donar_lbl)
-                            .addComponent(item_lbl)
-                            .addComponent(itemname_lbl)
-                            .addComponent(cat_lbl))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(itemname_txt)
-                            .addComponent(donar_txt, 0, 156, Short.MAX_VALUE)
-                            .addComponent(txtItemType)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(status_lbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(315, 315, 315)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(status_cmb, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cat_txt, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addComponent(btn_save)))))
-                .addContainerGap(344, Short.MAX_VALUE))
+                                .addComponent(itemname_lbl)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(itemname_txt))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(cat_lbl)
+                                    .addGap(162, 162, 162))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(162, 162, 162)
+                                    .addComponent(cat_txt, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(donar_lbl)
+                                        .addComponent(item_lbl))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(donar_txt, 0, 156, Short.MAX_VALUE)
+                                        .addComponent(txtItemType)))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(status_lbl)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(status_cmb, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(title_lbl)
+                                    .addGap(66, 66, 66)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(408, 408, 408)
+                        .addComponent(btn_save)))
+                .addContainerGap(263, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {cat_lbl, cat_txt, donar_lbl, donar_txt, item_lbl, itemname_lbl, itemname_txt, status_cmb, status_lbl, txtItemType});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+                .addGap(86, 86, 86)
                 .addComponent(title_lbl)
-                .addGap(29, 29, 29)
+                .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(donar_lbl)
                     .addComponent(donar_txt, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -146,22 +160,25 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(item_lbl)
                     .addComponent(txtItemType, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(itemname_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itemname_lbl))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cat_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cat_lbl))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(itemname_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(itemname_lbl))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(status_lbl)
                     .addComponent(status_cmb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
+                .addGap(18, 18, 18)
                 .addComponent(btn_save)
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(124, Short.MAX_VALUE))
         );
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cat_lbl, cat_txt, donar_lbl, donar_txt, item_lbl, itemname_lbl, itemname_txt, status_cmb, status_lbl, txtItemType});
+
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_saveActionPerformed

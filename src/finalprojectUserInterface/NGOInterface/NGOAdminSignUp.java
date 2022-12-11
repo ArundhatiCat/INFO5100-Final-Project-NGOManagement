@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author supriyaa
+ * @author sneha
  */
 public class NGOAdminSignUp extends javax.swing.JPanel {
 
@@ -77,27 +77,27 @@ public class NGOAdminSignUp extends javax.swing.JPanel {
 
         ngoadmin_lbl.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         ngoadmin_lbl.setText("Create Admin Profile");
-        jPanel1.add(ngoadmin_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, -1, -1));
+        jPanel1.add(ngoadmin_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, -1, -1));
 
         name_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         name_lbl.setText("Name:");
-        jPanel1.add(name_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, -1, -1));
-        jPanel1.add(name_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 210, -1));
+        jPanel1.add(name_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, -1));
+        jPanel1.add(name_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 210, -1));
 
         unmae_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         unmae_lbl.setText("Username:");
-        jPanel1.add(unmae_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, -1, -1));
-        jPanel1.add(uname_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, 210, -1));
+        jPanel1.add(unmae_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+        jPanel1.add(uname_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 210, -1));
 
         pswd_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         pswd_lbl.setText("Password:");
-        jPanel1.add(pswd_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, -1, -1));
-        jPanel1.add(pswd_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, 210, -1));
+        jPanel1.add(pswd_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
+        jPanel1.add(pswd_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 210, -1));
 
         addr_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         addr_lbl.setText("Address:");
-        jPanel1.add(addr_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 300, -1, -1));
-        jPanel1.add(addr_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 300, 210, -1));
+        jPanel1.add(addr_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 100, -1, -1));
+        jPanel1.add(addr_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 100, 210, -1));
 
         signup_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         signup_btn.setText("Sign Up");
@@ -106,11 +106,11 @@ public class NGOAdminSignUp extends javax.swing.JPanel {
                 signup_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 500, 87, -1));
+        jPanel1.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 300, 87, -1));
 
         reg_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         reg_lbl.setText("Registered No.:");
-        jPanel1.add(reg_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 110, -1));
+        jPanel1.add(reg_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 110, -1));
 
         back_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         back_btn.setText("Back");
@@ -119,23 +119,23 @@ public class NGOAdminSignUp extends javax.swing.JPanel {
                 back_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 500, 87, -1));
-        jPanel1.add(reg_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 260, 210, -1));
+        jPanel1.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, 87, -1));
+        jPanel1.add(reg_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 210, -1));
 
         city_txt.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         city_txt.setText("City:");
-        jPanel1.add(city_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 350, -1, -1));
-        jPanel1.add(cityname_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 350, 210, -1));
+        jPanel1.add(city_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, -1, -1));
+        jPanel1.add(cityname_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 150, 210, -1));
 
         state_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         state_lbl.setText("State:");
-        jPanel1.add(state_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 390, -1, -1));
-        jPanel1.add(state_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 390, 210, -1));
+        jPanel1.add(state_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, -1, -1));
+        jPanel1.add(state_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, 210, -1));
 
         zipcode_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         zipcode_lbl.setText("Zip Code:");
-        jPanel1.add(zipcode_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 440, -1, -1));
-        jPanel1.add(zip_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 440, 210, -1));
+        jPanel1.add(zipcode_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, -1, -1));
+        jPanel1.add(zip_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 210, -1));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

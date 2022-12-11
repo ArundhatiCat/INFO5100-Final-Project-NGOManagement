@@ -81,7 +81,7 @@ public class AdminPageForNGOManager extends javax.swing.JPanel {
                 delete_btnActionPerformed(evt);
             }
         });
-        add(delete_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 350, 130, 50));
+        add(delete_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 130, 50));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-5, -4, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
