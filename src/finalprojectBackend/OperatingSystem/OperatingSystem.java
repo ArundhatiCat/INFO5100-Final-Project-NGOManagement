@@ -269,7 +269,9 @@ public class OperatingSystem {
             }
         }
         for (DeliveryAgent da : delieveryAgentDirectory) {
+            System.out.println("LoginCheck(da): " + da.getpName() + " " + da.getPwd());
             if (da.getpName().equals(IdUser) && da.getPwd().equals(pwd)) {
+                System.out.println("LoginCheck(da): successful" + da.getpName() + " " + da.getPwd());
                 return da;
             }
         }

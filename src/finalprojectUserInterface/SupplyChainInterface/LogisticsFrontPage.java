@@ -154,7 +154,8 @@ public class LogisticsFrontPage extends javax.swing.JPanel {
 
     private void login_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_btnActionPerformed
         // TODO add your handling code here:
-
+        String role = role_cmb.getSelectedItem().toString();
+        System.out.println(role);
         if (role_cmb.getSelectedItem().toString() == "Delivery Vehicle") {
 
             JOptionPane.showMessageDialog(this, "Vehicle not allow to login.");
@@ -163,7 +164,9 @@ public class LogisticsFrontPage extends javax.swing.JPanel {
         //
         //        }
         if (role_cmb.getSelectedItem().toString() == "Delivery Agent") {
+            
             DeliveryAgent ho = (DeliveryAgent) operatingSystem.loginAuthentication(uname_txt.getText(), pwd_txt.getText());
+            System.out.println(ho.getNamePerson());
             if (ho == null) {
                 JOptionPane.showMessageDialog(this, "Incorrect credential");
             } else {
