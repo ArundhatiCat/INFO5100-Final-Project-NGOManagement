@@ -121,7 +121,7 @@ public class ManagerLogin extends javax.swing.JPanel {
         jPanel2.add(logout_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 330, 170, 40));
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-15, -34, -1, -1));
 
-        tab1.addTab("Patient List", jPanel2);
+        tab1.addTab("Receiver Details", jPanel2);
 
         jPanel3.setBackground(new java.awt.Color(204, 255, 204));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author supriyaa
+ * @author sneha
  */
 public class AdminPageForCaretakers extends javax.swing.JPanel {
 

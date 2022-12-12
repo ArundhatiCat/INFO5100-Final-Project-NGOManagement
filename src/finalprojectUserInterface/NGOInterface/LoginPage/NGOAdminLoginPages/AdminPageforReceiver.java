@@ -15,7 +15,7 @@ import finalprojectBackend.Enterprise.NGO.Recepient;
 import finalprojectUserInterface.MainJFrameForm;
 /**
  *
- * @author supriyaa
+ * @author sneha
  */
 public class AdminPageforReceiver extends javax.swing.JPanel {
 
