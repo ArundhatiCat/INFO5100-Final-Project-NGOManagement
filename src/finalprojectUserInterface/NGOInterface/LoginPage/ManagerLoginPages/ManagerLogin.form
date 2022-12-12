@@ -76,8 +76,8 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Receiver Details">
-                    <Property name="tabTitle" type="java.lang.String" value="Receiver Details"/>
+                  <JTabbedPaneConstraints tabName="Patient List">
+                    <Property name="tabTitle" type="java.lang.String" value="Patient List"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>

@@ -77,7 +77,7 @@ public class DelhiveryAgentLogin extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(table1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 871, 270));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 871, 270));
 
         logout_btn.setBackground(new java.awt.Color(255, 204, 204));
         logout_btn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -87,20 +87,19 @@ public class DelhiveryAgentLogin extends javax.swing.JPanel {
                 logout_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(logout_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 340, 150, 30));
+        jPanel1.add(logout_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 500, 150, 30));
 
         status_lbl.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         status_lbl.setText("Status:");
-        jPanel1.add(status_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 70, -1));
+        jPanel1.add(status_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 70, -1));
 
         status_txt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 status_txtActionPerformed(evt);
             }
         });
-        jPanel1.add(status_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 340, 150, 30));
+        jPanel1.add(status_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 150, 30));
 
-        addstatus_btn.setBackground(new java.awt.Color(255, 204, 204));
         addstatus_btn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         addstatus_btn.setText("Add Status");
         addstatus_btn.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +107,7 @@ public class DelhiveryAgentLogin extends javax.swing.JPanel {
                 addstatus_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(addstatus_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 150, 30));
+        jPanel1.add(addstatus_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 440, 150, 30));
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -80, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

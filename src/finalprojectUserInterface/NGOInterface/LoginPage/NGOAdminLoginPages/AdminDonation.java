@@ -12,7 +12,7 @@ import finalprojectUserInterface.MainJFrameForm;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author sneha
+ * @author supriyaa
  */
 public class AdminDonation extends javax.swing.JPanel {
 
