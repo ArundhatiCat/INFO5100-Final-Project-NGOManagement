@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author supriyaa
+ * @author sneha
  */
 public class AdminPageforItemDonation extends javax.swing.JPanel {
 
