@@ -92,7 +92,7 @@ public class ManagerLogin extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(table_1);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 990, 220));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 890, 220));
 
         addremarks_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         addremarks_btn.setText("Add Remarks");

@@ -56,7 +56,6 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
         donar_lbl = new javax.swing.JLabel();
         item_lbl = new javax.swing.JLabel();
         itemname_txt = new javax.swing.JTextField();
-        itemtype_cmb = new javax.swing.JComboBox<>();
         itemname_lbl = new javax.swing.JLabel();
         cat_lbl = new javax.swing.JLabel();
         cat_txt = new javax.swing.JTextField();
@@ -64,6 +63,7 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
         status_cmb = new javax.swing.JComboBox<>();
         btn_save = new javax.swing.JButton();
         donar_txt = new javax.swing.JComboBox<>();
+        txtItemType = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 204, 204));
 
@@ -75,9 +75,6 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
 
         item_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         item_lbl.setText("Item Type:");
-
-        itemtype_cmb.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        itemtype_cmb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blood", "Organ" }));
 
         itemname_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         itemname_lbl.setText("Item Name:");
@@ -127,8 +124,8 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(itemname_txt)
-                                    .addComponent(itemtype_cmb, 0, 156, Short.MAX_VALUE)
-                                    .addComponent(donar_txt, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addComponent(donar_txt, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(txtItemType)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(status_lbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -143,7 +140,7 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {cat_lbl, donar_lbl, item_lbl, itemname_lbl, status_lbl});
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {cat_txt, donar_txt, itemname_txt, itemtype_cmb, status_cmb});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {cat_txt, donar_txt, itemname_txt, status_cmb});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -157,7 +154,7 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(item_lbl)
-                    .addComponent(itemtype_cmb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtItemType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(itemname_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -177,7 +174,7 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cat_lbl, donar_lbl, item_lbl, itemname_lbl, status_lbl});
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cat_txt, donar_txt, itemname_txt, itemtype_cmb, status_cmb});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cat_txt, donar_txt, itemname_txt, status_cmb});
 
     }// </editor-fold>//GEN-END:initComponents
 
@@ -190,7 +187,7 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
         Random rand = new Random();
         de.setUserId( String.format("%04d", rand.nextInt(10000)));
         de.setCategory(cat_txt.getText().toString());
-        de.setItem(itemtype_cmb.getSelectedItem().toString());
+        de.setItem(txtItemType.getText());
         
         de.setDonRecepient(operatingSystem.getReceiverByUserName(donar_txt.getSelectedItem().toString()));
         de.setStatusDonation(status_cmb.getSelectedItem().toString());
@@ -216,9 +213,9 @@ public class DonationCentreAdminItemDonate extends javax.swing.JPanel {
     private javax.swing.JLabel item_lbl;
     private javax.swing.JLabel itemname_lbl;
     private javax.swing.JTextField itemname_txt;
-    private javax.swing.JComboBox<String> itemtype_cmb;
     private javax.swing.JComboBox<String> status_cmb;
     private javax.swing.JLabel status_lbl;
     private javax.swing.JLabel title_lbl;
+    private javax.swing.JTextField txtItemType;
     // End of variables declaration//GEN-END:variables
 }

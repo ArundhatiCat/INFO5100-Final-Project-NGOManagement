@@ -40,8 +40,8 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="itemname_txt" linkSize="3" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="itemtype_cmb" linkSize="3" alignment="0" pref="156" max="32767" attributes="0"/>
                                   <Component id="donar_txt" linkSize="3" max="32767" attributes="0"/>
+                                  <Component id="txtItemType" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
@@ -76,7 +76,7 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="item_lbl" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="itemtype_cmb" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtItemType" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -126,22 +126,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="itemname_txt">
-    </Component>
-    <Component class="javax.swing.JComboBox" name="itemtype_cmb">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="11" style="1"/>
-        </Property>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="Blood"/>
-            <StringItem index="1" value="Organ"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="itemname_lbl">
       <Properties>
@@ -211,6 +195,8 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtItemType">
     </Component>
   </SubComponents>
 </Form>
