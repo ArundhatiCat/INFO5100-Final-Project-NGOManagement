@@ -30,7 +30,7 @@ import finalprojectUserInterface.MainJFrameForm;
 
 /**
  *
- * @author supriyaa
+ * @author sneha
  */
 public class AdminReceiveItem extends javax.swing.JPanel {
 

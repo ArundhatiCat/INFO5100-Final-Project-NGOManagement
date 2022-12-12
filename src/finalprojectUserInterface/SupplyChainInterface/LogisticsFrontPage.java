@@ -178,52 +178,7 @@ public class LogisticsFrontPage extends javax.swing.JPanel {
             }
 
         }
-        //
-        //        if (cmb_Role.getSelectedItem().toString() == "Patient") {
-            //            DeliveryMan r = system.loginDeliveryMan(txtUsername.getText(), txtPassword.getText());
-            //
-            //            if (r == null) {
-                //                JOptionPane.showMessageDialog(this, "Incorrect credential");
-                //            } else {
-                //                DeliverManMainPage delimp = new DeliverManMainPage(system, dB4OUtility, r);
-                //                this.setContentPane(delimp);
-                //                this.invalidate();
-                //                this.validate();
-                //                return;
-                //            }
-                //
-                //        }
-
-                //
-                //            JOptionPane.showMessageDialog(this, "All fields are mandatory.");
-                //        } else if (!name_chk.getText().equals("") || !telenum_chk.getText().equals("") || !add_chk.getText().equals("") || !city_chk.getText().equals("")
-                //            || !state_chk.getText().equals("") || !zip_chk.getText().equals("")) {
-                //
-                //            JOptionPane.showMessageDialog(this, "Invalid value(s) entered.");
-                //        }
-                //        else{
-                //            Address add = new Address(txtAdd.getText(), txtCity.getText(), txtState.getText(), Integer.parseInt(txtZip.getText()));
-                //
-                //            Customer cus =new Customer(txtUsrName.getText(), txtPass.getText(), new CustomerRole(),txtNo.getText(), txtFullName.getText(), add);
-                //            system.addCustomer(cus);
-                //
-                //            dB4OUtility.storeSystem(system);
-                //            JOptionPane.showMessageDialog(this, "Customer information saved.");
-                //            MainJFrame cust = new MainJFrame();
-                //            ((JFrame) SwingUtilities.getWindowAncestor(this)).dispose();
-                //            cust.setVisible(true);
-                //
-                //        if (cmb_Role.getSelectedItem().toString() == "Hospital Admin") {
-                //            if (txtUsername.getText().matches("a") && txtPassword.getText().matches("a")) {
-                //                AdminPage adminpg = new AdminPage(system, dB4OUtility);
-                //                this.setContentPane(adminpg);
-                //                this.invalidate();
-                //                this.validate();
-                //                return;
-                //            } else {
-                //                JOptionPane.showMessageDialog(this, "Incorrect credential");
-                //            }
-            //        }
+        
     }//GEN-LAST:event_login_btnActionPerformed
 
     private void sigin_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sigin_btnActionPerformed

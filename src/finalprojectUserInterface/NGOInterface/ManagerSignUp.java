@@ -86,42 +86,42 @@ public class ManagerSignUp extends javax.swing.JPanel {
 
         lbl_admintitle.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lbl_admintitle.setText("Create Manager Profile");
-        jPanel1.add(lbl_admintitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 24, -1, -1));
-        jPanel1.add(name_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 64, 216, -1));
+        jPanel1.add(lbl_admintitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, -1, -1));
+        jPanel1.add(name_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 216, -1));
 
         name_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         name_lbl.setText("Name:");
-        jPanel1.add(name_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
+        jPanel1.add(name_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
 
         uname_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         uname_lbl.setText("Username:");
-        jPanel1.add(uname_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, -1, -1));
-        jPanel1.add(uname_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 108, 216, -1));
+        jPanel1.add(uname_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
+        jPanel1.add(uname_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 216, -1));
 
         pwd_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         pwd_lbl.setText("Password:");
-        jPanel1.add(pwd_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, -1, -1));
-        jPanel1.add(pass_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 152, 216, 27));
+        jPanel1.add(pwd_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
+        jPanel1.add(pass_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 216, 27));
 
         address_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         address_lbl.setText("Address:");
-        jPanel1.add(address_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, -1, -1));
-        jPanel1.add(add_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 304, 216, 27));
+        jPanel1.add(address_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 80, -1, -1));
+        jPanel1.add(add_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 80, 216, 27));
 
         city_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         city_lbl.setText("City:");
-        jPanel1.add(city_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, -1, -1));
-        jPanel1.add(city_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 355, 216, 27));
+        jPanel1.add(city_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, -1, -1));
+        jPanel1.add(city_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, 216, 27));
 
         state_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         state_lbl.setText("State:");
-        jPanel1.add(state_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, -1, -1));
-        jPanel1.add(state_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 400, 216, 27));
+        jPanel1.add(state_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, -1, -1));
+        jPanel1.add(state_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, 216, 27));
 
         zip_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         zip_lbl.setText("Zip Code:");
-        jPanel1.add(zip_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 460, -1, -1));
-        jPanel1.add(zip_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, 220, 30));
+        jPanel1.add(zip_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, -1, -1));
+        jPanel1.add(zip_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, 220, 30));
 
         back_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         back_btn.setText("Back");
@@ -130,10 +130,10 @@ public class ManagerSignUp extends javax.swing.JPanel {
                 back_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, 87, -1));
+        jPanel1.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 87, -1));
 
         ngolist.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {  }));
-        jPanel1.add(ngolist, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 203, 216, -1));
+        jPanel1.add(ngolist, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 216, -1));
 
         signup_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         signup_btn.setText("Sign Up");
@@ -142,16 +142,16 @@ public class ManagerSignUp extends javax.swing.JPanel {
                 signup_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 510, 87, -1));
+        jPanel1.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 310, 87, -1));
 
         depart_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         depart_lbl.setText("Department:");
-        jPanel1.add(depart_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, -1, 20));
+        jPanel1.add(depart_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, 20));
 
         ngo_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         ngo_lbl.setText("NGO Name:");
-        jPanel1.add(ngo_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, -1, -1));
-        jPanel1.add(depart_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 250, 216, 27));
+        jPanel1.add(ngo_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
+        jPanel1.add(depart_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 216, 27));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, -4, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

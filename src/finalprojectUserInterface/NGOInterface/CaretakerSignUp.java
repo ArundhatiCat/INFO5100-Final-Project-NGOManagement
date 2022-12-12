@@ -84,41 +84,42 @@ public class CaretakerSignUp extends javax.swing.JPanel {
         contact_lbl = new javax.swing.JLabel();
         Contact_txt = new javax.swing.JTextField();
         lbl_ngo = new javax.swing.JLabel();
+        gen_cmb = new javax.swing.JComboBox<>();
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(reg_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 287, 216, -1));
+        jPanel1.add(reg_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 130, 216, -1));
 
         City_txt.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         City_txt.setText("City:");
-        jPanel1.add(City_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(424, 382, -1, -1));
-        jPanel1.add(name_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(459, 80, 216, -1));
+        jPanel1.add(City_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, -1, -1));
+        jPanel1.add(name_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 216, -1));
 
         uname_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         uname_lbl.setText("Username:");
-        jPanel1.add(uname_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(386, 125, -1, -1));
-        jPanel1.add(city_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 375, 216, -1));
-        jPanel1.add(uname_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(459, 118, 216, -1));
+        jPanel1.add(uname_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
+        jPanel1.add(city_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 210, 216, -1));
+        jPanel1.add(uname_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 216, -1));
 
         state_txt.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         state_txt.setText("State:");
-        jPanel1.add(state_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 426, -1, -1));
+        jPanel1.add(state_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, -1, -1));
 
         pswd_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         pswd_lbl.setText("Password:");
-        jPanel1.add(pswd_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(388, 157, -1, -1));
-        jPanel1.add(txt_state, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 419, 216, -1));
-        jPanel1.add(pwd_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(459, 150, 216, -1));
+        jPanel1.add(pswd_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
+        jPanel1.add(txt_state, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, 216, -1));
+        jPanel1.add(pwd_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 216, -1));
 
         zip_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         zip_lbl.setText("Zip Code:");
-        jPanel1.add(zip_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(397, 471, -1, -1));
+        jPanel1.add(zip_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, -1, -1));
 
         address_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         address_lbl.setText("Address:");
-        jPanel1.add(address_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(399, 343, -1, -1));
-        jPanel1.add(zip_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 464, 216, -1));
-        jPanel1.add(add_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 331, 216, -1));
+        jPanel1.add(address_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, -1, -1));
+        jPanel1.add(zip_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 280, 216, -1));
+        jPanel1.add(add_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, 216, -1));
 
         signup_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         signup_btn.setText("Sign Up");
@@ -127,11 +128,11 @@ public class CaretakerSignUp extends javax.swing.JPanel {
                 signup_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 522, 87, -1));
+        jPanel1.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 350, 87, -1));
 
         lbl_admintitle.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         lbl_admintitle.setText("Create Caretaker Profile");
-        jPanel1.add(lbl_admintitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 29, -1, -1));
+        jPanel1.add(lbl_admintitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, -1, -1));
 
         back_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         back_btn.setText("Back");
@@ -140,57 +141,57 @@ public class CaretakerSignUp extends javax.swing.JPanel {
                 back_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(461, 522, 87, -1));
+        jPanel1.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 87, -1));
 
         lbl_reg.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lbl_reg.setText("Registered No.:");
-        jPanel1.add(lbl_reg, new org.netbeans.lib.awtextra.AbsoluteConstraints(362, 294, -1, -1));
+        jPanel1.add(lbl_reg, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, -1, -1));
 
         name_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         name_lbl.setText("Name:");
-        jPanel1.add(name_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(411, 87, -1, -1));
+        jPanel1.add(name_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
 
         ngo_list.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {  }));
-        jPanel1.add(ngo_list, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 250, 216, -1));
+        jPanel1.add(ngo_list, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 216, -1));
 
         gender.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         gender.setText("Gender:");
-        jPanel1.add(gender, new org.netbeans.lib.awtextra.AbsoluteConstraints(393, 188, -1, -1));
-        jPanel1.add(gender_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(459, 182, 84, -1));
+        jPanel1.add(gender, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
+        jPanel1.add(gender_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 84, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("DOB:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(549, 188, -1, -1));
-        jPanel1.add(dob_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(585, 182, 90, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
+        jPanel1.add(dob_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 90, -1));
 
         contact_lbl.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         contact_lbl.setText("Contact:");
-        jPanel1.add(contact_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(397, 222, -1, -1));
-        jPanel1.add(Contact_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(459, 216, 216, -1));
+        jPanel1.add(contact_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, -1));
+        jPanel1.add(Contact_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 216, -1));
 
         lbl_ngo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lbl_ngo.setText("NGO:");
-        jPanel1.add(lbl_ngo, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 60, 20));
+        jPanel1.add(lbl_ngo, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, 60, 20));
+
+        gen_cmb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        gen_cmb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        jPanel1.add(gen_cmb, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 216, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1438, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1438, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1438, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1123, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -204,7 +205,7 @@ public class CaretakerSignUp extends javax.swing.JPanel {
                     String address = add_txt.getText() + "," + city_txt.getText() + "," + txt_state.getText() + "," + zip_txt.getText();
                     int id = rand.nextInt(99);
                     //Nurse nurse = new Caretaker(txtFullName.getText(), txtNo.getText(), address, txtUsrName.getText(), txtPass.getText(), txtGender.getText(), txtDOB.getText(), new Date(),jComboBox1.getSelectedItem().toString());
-                    Caretaker nurse = new Caretaker(uname_txt.getText(), pwd_txt.getText(), String.valueOf(id), name_txt.getText(), address, gender_txt.getText(), reg_txt.getText(), new Date(), ngo_list.getSelectedItem().toString());
+                    Caretaker nurse = new Caretaker(uname_txt.getText(), pwd_txt.getText(), String.valueOf(id), name_txt.getText(), address, gen_cmb.getSelectedItem().toString(), reg_txt.getText(), new Date(), ngo_list.getSelectedItem().toString());
 
                     operatingSystem.addCaretaker(nurse);
                     dB4OUtility.storeSystem(operatingSystem);
@@ -375,16 +376,16 @@ public class CaretakerSignUp extends javax.swing.JPanel {
             Contact_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
         }
         
-        if(gender_txt.getText().equals(null) || gender_txt.getText().trim().isEmpty() )
-            {
-                gender_txt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
-                gender_txt.setToolTipText("This Field Cannot be empty");
-                emptyValidationStatus= false;
-            }
-        if(!gender_txt.getText().equals(null) && !gender_txt.getText().trim().isEmpty() )
-        {
-            gender_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
-        }
+//        if(gender_txt.getText().equals(null) || gender_txt.getText().trim().isEmpty() )
+//            {
+//                gender_txt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+//                gender_txt.setToolTipText("This Field Cannot be empty");
+//                emptyValidationStatus= false;
+//            }
+//        if(!gender_txt.getText().equals(null) && !gender_txt.getText().trim().isEmpty() )
+//        {
+//            gender_txt.setBorder(BorderFactory.createLineBorder(Color.BLUE, 1));
+//        }
         
         if(dob_txt.getText().equals(null) || dob_txt.getText().trim().isEmpty() )
             {
@@ -409,6 +410,7 @@ public class CaretakerSignUp extends javax.swing.JPanel {
     private javax.swing.JTextField city_txt;
     private javax.swing.JLabel contact_lbl;
     private javax.swing.JTextField dob_txt;
+    private javax.swing.JComboBox<String> gen_cmb;
     private javax.swing.JLabel gender;
     private javax.swing.JTextField gender_txt;
     private javax.swing.JLabel jLabel2;
