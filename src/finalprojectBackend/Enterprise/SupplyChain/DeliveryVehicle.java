@@ -13,6 +13,13 @@ public class DeliveryVehicle {
     private String dvehiclenum;
     private String dvehicletype;
     private String dvehicaldescription;
+    
+    public DeliveryVehicle(String dvehiclename, String dvehiclenum, String dvehicletype, String dvehicaldescription) {
+        this.dvehiclename = dvehiclename;
+        this.dvehiclenum = dvehiclenum;
+        this.dvehicletype = dvehicletype;
+        this.dvehicaldescription = dvehicaldescription;
+    }
 
     public String getDvehiclename() {
         return dvehiclename;
@@ -44,14 +51,5 @@ public class DeliveryVehicle {
 
     public void setDvehicaldescription(String dvehicaldescription) {
         this.dvehicaldescription = dvehicaldescription;
-    }
-    
-    
-
-    public DeliveryVehicle(String dvehiclename, String dvehiclenum, String dvehicletype, String dvehicaldescription) {
-        this.dvehiclename = dvehiclename;
-        this.dvehiclenum = dvehiclenum;
-        this.dvehicletype = dvehicletype;
-        this.dvehicaldescription = dvehicaldescription;
-    }
+    }   
 }

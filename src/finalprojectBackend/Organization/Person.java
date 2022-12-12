@@ -10,8 +10,7 @@ import java.util.Date;
  *
  * @author sneha
  */
-public class Person {
-    
+public class Person {  
     
     
 
@@ -35,13 +34,7 @@ private Date dob;
         this.dob = dob;
     }
 
-    public Date getDob() {
-        return dob;
-    }
-
-    public void setDob(Date dob) {
-        this.dob = dob;
-    }
+    
 
     public String getpName() {
         return pName;
@@ -81,15 +74,7 @@ private Date dob;
 
     public void setPgender(String pgender) {
         this.pgender = pgender;
-    }
-
-    public String getContactNumber() {
-        return contactNumber;
-    }
-
-    public void setContactNumber(String contactNumber) {
-        this.contactNumber = contactNumber;
-    }
+    }    
 
     public String getIdUser() {
         return idUser;
@@ -97,6 +82,22 @@ private Date dob;
 
     public void setIdUser(String idUser) {
         this.idUser = idUser;
+    }
+    
+    public String getContactNumber() {
+        return contactNumber;
+    }
+
+    public void setContactNumber(String contactNumber) {
+        this.contactNumber = contactNumber;
+    }
+    
+    public Date getDob() {
+        return dob;
+    }
+
+    public void setDob(Date dob) {
+        this.dob = dob;
     }
     
     
