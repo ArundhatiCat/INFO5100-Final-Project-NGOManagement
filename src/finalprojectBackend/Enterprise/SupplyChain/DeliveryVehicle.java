@@ -44,8 +44,7 @@ public class DeliveryVehicle {
 
     public void setDvehicaldescription(String dvehicaldescription) {
         this.dvehicaldescription = dvehicaldescription;
-    }
-    
+    }  
     
 
     public DeliveryVehicle(String dvehiclename, String dvehiclenum, String dvehicletype, String dvehicaldescription) {
