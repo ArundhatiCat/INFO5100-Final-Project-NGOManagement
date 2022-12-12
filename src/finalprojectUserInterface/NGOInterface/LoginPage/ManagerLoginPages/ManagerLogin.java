@@ -101,14 +101,14 @@ public class ManagerLogin extends javax.swing.JPanel {
                 addremarks_btnActionPerformed(evt);
             }
         });
-        jPanel2.add(addremarks_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 260, -1, 50));
+        jPanel2.add(addremarks_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, -1, 50));
 
         addremarks_txt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addremarks_txtActionPerformed(evt);
             }
         });
-        jPanel2.add(addremarks_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, 274, 30));
+        jPanel2.add(addremarks_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 274, 30));
 
         logout_btn.setBackground(new java.awt.Color(255, 204, 204));
         logout_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -118,10 +118,10 @@ public class ManagerLogin extends javax.swing.JPanel {
                 logout_btnActionPerformed(evt);
             }
         });
-        jPanel2.add(logout_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 330, 170, 40));
+        jPanel2.add(logout_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 170, 40));
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-15, -34, -1, -1));
 
-        tab1.addTab("Patient List", jPanel2);
+        tab1.addTab("Receiver Details", jPanel2);
 
         jPanel3.setBackground(new java.awt.Color(204, 255, 204));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
