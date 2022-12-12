@@ -2,9 +2,14 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 TEAM MEMBERS
+
 Sneha Giranje: NUID 002785370 giranje.s@northeastern.edu
+
 Arundhati Pathrikar: NUID 002780632 pathrikar.ar@northeastern.edu
+
 Sejal Mutha: NUID 002653754 mutha.s@northeastern.edu
+
+
 
 
 ## OVERVIEW
@@ -17,6 +22,9 @@ Sejal Mutha: NUID 002653754 mutha.s@northeastern.edu
 - Displayed bar graph, line graph, and pie chart using jFreeChart jar for visualization of data.
 - Authorised roles and functions for the system containing multiple roles, organizations, and enterprises across various networks.
 - We aspire to minimize the end-to-end lifecycle of recipient received donated items which includes multiple operations.
+
+
+![](./Mainframe.png)
 
 ## STRUCTURE
 
@@ -45,6 +53,14 @@ Sejal Mutha: NUID 002653754 mutha.s@northeastern.edu
 | ------ | ------ |
 | Donation Centre Administration |  Donar Admin, Donar|
 | Inventory Department  | Inventory Manager |
+
+## SEQUENCE DIAGRAM
+
+![](./sequence_diagram.png)
+
+## UML DIAGRAM
+
+![](./ClassDiagramNGO.gif)
 
 ## Installation Requirement
 
