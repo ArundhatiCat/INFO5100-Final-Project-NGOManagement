@@ -84,7 +84,7 @@ public class Visualization extends javax.swing.JPanel {
         };
     }
     
-    private ChartPanel chartPanelBloodEntity() {
+    private ChartPanel chartPanelCategoryEntity() {
         final XYSeries series = new XYSeries("Data");
         for (int i = 0; i < random.nextInt(N) + N / 2; i++) {
                 series.add(i, random.nextGaussian());
@@ -149,40 +149,7 @@ public class Visualization extends javax.swing.JPanel {
         };
     }
     
-    private ChartPanel chartPanelReceiverEntityChartPanel() {
-        final XYSeries series = new XYSeries("Data");
-        for (int i = 0; i < random.nextInt(N) + N / 2; i++) {
-            series.add(i, random.nextGaussian());
-        }
-        XYSeriesCollection dataset = new XYSeriesCollection(series);
-        DefaultCategoryDataset defaultCatDataset = new DefaultCategoryDataset();
-        
-        Map<String, Integer> hashMap = new HashMap();
-        for(AssignmentDonation dasn: operatingSystem.getAssignmentDonationList()){
-            try{
-            String key = dasn.getRecEnterpriseClass().getNameEnterprise().toLowerCase();
-            
-            hashMap.put(key,  hashMap.containsKey(key)? 1+hashMap.get(key):1);
-            }
-            catch (Exception e){
-                //e.printStackTrace();
-            }
-           
-        }
-        for(String k:hashMap.keySet()){
-            System.out.println("key: "+k+": "+hashMap.get(k));
-            defaultCatDataset.addValue(hashMap.get(k), "", k);
-        }
-        
-        JFreeChart chart = ChartFactory.createBarChart("", "Receiver user Entity.",
-            "Range", defaultCatDataset, PlotOrientation.VERTICAL, false, false, false);
-        return new ChartPanel(chart) {
-            @Override
-            public Dimension getPreferredSize() {
-                return new Dimension(N * 2, N * 2);
-            }
-        };
-    }
+    
     
     private ChartPanel chartPanelStatusPanel() {
         final XYSeries series = new XYSeries("Data");
@@ -224,17 +191,52 @@ public class Visualization extends javax.swing.JPanel {
     }
     
     private void display() {
-        JFrame f = new JFrame("Test");
+        JFrame f = new JFrame("Graphs");
         JPanel p = new JPanel(new GridLayout(1, 1));
-        p.add(chartPanelNameEntity());
+        p.add(chartPanelNameEntity());        
+        p.add(chartPanelCategoryEntity());
         p.add(chartPanelEnterpriseEntity());
-        p.add(chartPanelBloodEntity());
-        p.add(chartPanelReceiverEntityChartPanel());
+        //p.add(chartPanelReceiverEntityChartPanel());
         p.add(chartPanelStatusPanel());
         f.add(p);
         f.pack();
         f.setLocationRelativeTo(null);
         f.setVisible(true);
+    }
+    
+    private ChartPanel chartPanelReceiverEntityChartPanel() {
+        final XYSeries series = new XYSeries("Data");
+        for (int i = 0; i < random.nextInt(N) + N / 2; i++) {
+            series.add(i, random.nextGaussian());
+        }
+        XYSeriesCollection dataset = new XYSeriesCollection(series);
+        DefaultCategoryDataset defaultCatDataset = new DefaultCategoryDataset();
+        
+        Map<String, Integer> hashMap = new HashMap();
+        for(AssignmentDonation dasn: operatingSystem.getAssignmentDonationList()){
+            try{
+            String key = dasn.getRecEnterpriseClass().getNameEnterprise().toLowerCase();
+            
+            hashMap.put(key,  hashMap.containsKey(key)? 1+hashMap.get(key):1);
+            }
+            catch (Exception e){
+                //e.printStackTrace();
+            }
+           
+        }
+        for(String k:hashMap.keySet()){
+            System.out.println("key: "+k+": "+hashMap.get(k));
+            defaultCatDataset.addValue(hashMap.get(k), "", k);
+        }
+        
+        JFreeChart chart = ChartFactory.createBarChart("", "Receiver user Entity.",
+            "Range", defaultCatDataset, PlotOrientation.VERTICAL, false, false, false);
+        return new ChartPanel(chart) {
+            @Override
+            public Dimension getPreferredSize() {
+                return new Dimension(N * 2, N * 2);
+            }
+        };
     }
 
     /**
