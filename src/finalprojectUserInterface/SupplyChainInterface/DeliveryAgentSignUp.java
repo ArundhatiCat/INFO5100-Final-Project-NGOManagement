@@ -167,11 +167,6 @@ public class DeliveryAgentSignUp extends javax.swing.JPanel {
 
         gen_cmb.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         gen_cmb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
-        gen_cmb.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gen_cmbActionPerformed(evt);
-            }
-        });
         jPanel1.add(gen_cmb, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 470, 216, -1));
 
         dob_lbl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -258,10 +253,6 @@ public class DeliveryAgentSignUp extends javax.swing.JPanel {
     private void state_txtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_state_txtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_state_txtActionPerformed
-
-    private void gen_cmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gen_cmbActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_gen_cmbActionPerformed
 
     private boolean RegexValidation() {
     if(!name_txt.getText().matches("^[a-zA-Z ]+$"))

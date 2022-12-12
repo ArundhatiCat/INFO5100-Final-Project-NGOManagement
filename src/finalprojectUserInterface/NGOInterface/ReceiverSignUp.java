@@ -93,42 +93,42 @@ public class ReceiverSignUp extends javax.swing.JPanel {
 
         receivertitle_lbl.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         receivertitle_lbl.setText("Create Receiver Profile");
-        jPanel1.add(receivertitle_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
-        jPanel1.add(txtEnterpriseName, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 221, -1));
+        jPanel1.add(receivertitle_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, -1, -1));
+        jPanel1.add(txtEnterpriseName, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, 221, -1));
 
         name_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         name_lbl.setText("Name:");
-        jPanel1.add(name_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+        jPanel1.add(name_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 150, -1, -1));
 
         uname_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         uname_lbl.setText("Username:");
-        jPanel1.add(uname_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
-        jPanel1.add(txtUsrName, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 221, -1));
+        jPanel1.add(uname_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, -1, -1));
+        jPanel1.add(txtUsrName, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 180, 221, -1));
 
         pswd_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         pswd_lbl.setText("Password:");
-        jPanel1.add(pswd_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
-        jPanel1.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 221, 30));
+        jPanel1.add(pswd_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, -1, -1));
+        jPanel1.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 212, 221, 30));
 
         address_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         address_lbl.setText("Address:");
-        jPanel1.add(address_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, -1, -1));
-        jPanel1.add(txtAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 80, 221, 30));
+        jPanel1.add(address_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, -1, -1));
+        jPanel1.add(txtAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, 221, 30));
 
         city_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         city_lbl.setText("City:");
-        jPanel1.add(city_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, -1, -1));
-        jPanel1.add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, 221, -1));
+        jPanel1.add(city_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 330, -1, -1));
+        jPanel1.add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 330, 221, -1));
 
         state_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         state_lbl.setText("State:");
-        jPanel1.add(state_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, -1, -1));
-        jPanel1.add(txtState, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 221, 30));
+        jPanel1.add(state_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 370, -1, -1));
+        jPanel1.add(txtState, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 221, 30));
 
         zip_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         zip_lbl.setText("Zip Code:");
-        jPanel1.add(zip_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, -1, 10));
-        jPanel1.add(txtZip, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 221, 27));
+        jPanel1.add(zip_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 410, -1, 10));
+        jPanel1.add(txtZip, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 400, 221, 27));
 
         back_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         back_btn.setText("Back");
@@ -137,7 +137,7 @@ public class ReceiverSignUp extends javax.swing.JPanel {
                 back_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 87, -1));
+        jPanel1.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 600, 87, -1));
 
         signup_btn.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         signup_btn.setText("Sign Up");
@@ -146,38 +146,38 @@ public class ReceiverSignUp extends javax.swing.JPanel {
                 signup_btnActionPerformed(evt);
             }
         });
-        jPanel1.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 87, -1));
+        jPanel1.add(signup_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 600, 87, -1));
 
         gender_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         gender_lbl.setText("Gender:");
-        jPanel1.add(gender_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 254, -1, 20));
+        jPanel1.add(gender_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 450, -1, -1));
 
         cmb_gender.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cmb_gender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
-        jPanel1.add(cmb_gender, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, 221, -1));
+        jPanel1.add(cmb_gender, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 450, 221, -1));
 
         num_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         num_lbl.setText("Phone no.:");
-        jPanel1.add(num_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, -1, -1));
-        jPanel1.add(txt_telenum, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, 221, -1));
+        jPanel1.add(num_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 490, -1, -1));
+        jPanel1.add(txt_telenum, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 490, 221, -1));
 
         dob_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         dob_lbl.setText("Date of Birth:");
-        jPanel1.add(dob_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, -1, -1));
-        jPanel1.add(txt_dob, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 221, -1));
+        jPanel1.add(dob_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 530, -1, -1));
+        jPanel1.add(txt_dob, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 520, 221, -1));
 
         remarks_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         remarks_lbl.setText("Remarks");
-        jPanel1.add(remarks_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 300, -1, -1));
-        jPanel1.add(txt_diag, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, 221, -1));
+        jPanel1.add(remarks_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 570, -1, -1));
+        jPanel1.add(txt_diag, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 560, 221, -1));
 
         hospitalList.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         hospitalList.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {  }));
-        jPanel1.add(hospitalList, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, 221, 30));
+        jPanel1.add(hospitalList, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, 221, 30));
 
         ngo_lbl.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         ngo_lbl.setText("NGO:");
-        jPanel1.add(ngo_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
+        jPanel1.add(ngo_lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, -1, -1));
 
         jLabel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -186,16 +186,21 @@ public class ReceiverSignUp extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 12, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1250, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(0, 1262, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 875, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, 887, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 875, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
